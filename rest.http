@@ -1,0 +1,28 @@
+GET http://localhost:8080/hello
+
+###
+GET http://localhost:8080/get?id=db39961e-add4-455c-90b9-a4faaf6f3060
+
+###
+GET http://localhost:8080/getall
+
+###
+POST http://localhost:8080/create
+content-type: application/json
+
+{
+    "name": "Marcos",
+    "email": "mf@email.com"
+}
+
+###
+PATCH http://localhost:8080/update?id=db39961e-add4-455c-90b9-a4faaf6f3060
+content-type: application/json
+
+{
+    "name": "Duda",
+    "email": "duda@email.com"
+}
+
+###
+DELETE http://localhost:8080/delete?id=3
